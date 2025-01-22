@@ -16,9 +16,9 @@
                     <span class="bg-white rounded-sm p-1 text-gray-900">A</span>
                 </h2>
                 <div class="hidden sm:flex space-x-3">
-                    <router-link to="">Home</router-link>
+                    <router-link :to="{name: 'index'}">Home</router-link>
                     <router-link to="">Projects</router-link>
-                    <router-link to="">My Cv</router-link>
+                    <router-link :to="{ name: 'Curriculum_vitae' }">My Cv</router-link>
                     <router-link to="">Blog</router-link>
                     <router-link to="">Contact</router-link>
                 </div>
@@ -39,14 +39,14 @@
                 showMobileMenu ? 'translate-x-0' : '-translate-x-full'
             ]"
             >            
-            <router-link class="p-3 text-white border-b border-gray-800" to="">Home</router-link>
+            <router-link class="p-3 text-white border-b border-gray-800" :to="{name: 'index'}">Home</router-link>
             <router-link class="p-3 text-white border-b border-gray-800" to="">Projects</router-link>
-            <router-link class="p-3 text-white border-b border-gray-800" to="">My Cv</router-link>
+            <router-link class="p-3 text-white border-b border-gray-800" :to="{name: 'Curriculum_vitae'}">My Cv</router-link>
             <router-link class="p-3 text-white border-b border-gray-800" to="">Blog</router-link>
             <router-link class="p-3 text-white border-b border-gray-800" to="">Contact</router-link>
             <p class="absolute bottom-2 text-center text-gray-500 w-full text-sm">ElementEdge Agency</p>    
         </div>    
-        <button class="fixed bottom-2 text-white right-2 z-50 bg-teal-600 rounded-lg shadow-2xl py-2 px-4">My Cv</button>
+        <router-link :to="{name: 'Curriculum_vitae'}" class="fixed bottom-2 text-white right-2 z-50 bg-teal-600 rounded-lg shadow-2xl py-2 px-4">My Cv</router-link>
     </header>
     <!-- 
 Key Changes:
