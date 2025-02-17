@@ -19,8 +19,8 @@
                     <router-link :to="{name: 'index'}">Home</router-link>
                     <router-link to="">Projects</router-link>
                     <router-link :to="{ name: 'Curriculum_vitae' }">My Cv</router-link>
-                    <router-link to="">Blog</router-link>
-                    <router-link to="">Contact</router-link>
+                    <router-link :to="{ name: 'Blog'}">Blog</router-link>
+                    <router-link :to="{ name: 'Contact'}">Contact</router-link>
                 </div>
               
                 <!-- Mobile Menu Button -->
@@ -42,8 +42,8 @@
             <router-link class="p-3 text-white border-b border-gray-800" :to="{name: 'index'}">Home</router-link>
             <router-link class="p-3 text-white border-b border-gray-800" to="">Projects</router-link>
             <router-link class="p-3 text-white border-b border-gray-800" :to="{name: 'Curriculum_vitae'}">My Cv</router-link>
-            <router-link class="p-3 text-white border-b border-gray-800" to="">Blog</router-link>
-            <router-link class="p-3 text-white border-b border-gray-800" to="">Contact</router-link>
+            <router-link class="p-3 text-white border-b border-gray-800" :to="{ name: 'Blog'}">Blog</router-link>
+            <router-link class="p-3 text-white border-b border-gray-800" :to="{ name: 'Contact'}">Contact</router-link>
             <p class="absolute bottom-2 text-center text-gray-500 w-full text-sm">ElementEdge Agency</p>    
         </div>    
         <router-link :to="{name: 'Curriculum_vitae'}" class="fixed bottom-2 text-white right-2 z-50 bg-teal-600 rounded-lg shadow-2xl py-2 px-4">My Cv</router-link>
